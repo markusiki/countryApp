@@ -1,5 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButtons, IonContent, IonHeader, IonItem, IonLabel, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -7,16 +6,20 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonButtons slot='start' >
+            <IonMenuButton></IonMenuButton>
+          </IonButtons>
+          <IonTitle>MyApp</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+      <IonContent>
+
+        <IonItem>
+          <IonLabel class='ion-text-wrap'>
+            <h1>You can search for country flags from the App page</h1>
+          </IonLabel>
+        </IonItem>
+        
       </IonContent>
     </IonPage>
   );
