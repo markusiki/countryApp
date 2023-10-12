@@ -1,0 +1,7 @@
+{
+  "name": "countriesApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
